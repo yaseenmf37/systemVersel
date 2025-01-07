@@ -100,7 +100,7 @@ export default function RedReceiptregistrationsystem() {
 
             <button
               type="submit"
-              className="w-full text-red-500 bg-white font-bold p-6 shadow-lg rounded-md py-2 "
+              className="w-full text-white bg-red-500 border-2 border-white font-bold p-6 shadow-lg rounded-md py-2 hover:bg-white hover:text-red-500 transition"
             >
               ثبت اطلاعات
             </button>

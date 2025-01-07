@@ -26,20 +26,20 @@ const sections = [
 ];
 
 const Section = ({ title, inputs, buttons }) => (
-  <div className="bg-gradient-to-r from-[#2563eb] via-[#60a5fa] to-[#93c5fd] shadow-lg rounded-lg p-6 mb-6">
+  <div className="bg-gradient-to-r from-[#dc2626] via-[#f87171] to-[#fca5a5] shadow-lg rounded-lg p-6 mb-6">
     <h2 className="text-lg font-bold text-white mb-4">{title}</h2>
     {inputs.map((input, index) => (
       <input
         key={index}
         type={input.type || "text"}
         placeholder={input.placeholder || ""}
-        className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-500 focus:outline-none mb-4 bg-red-50 text-[#1e3a8a]"
+        className="w-full border border-red-500 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-700 focus:outline-none mb-4 bg-red-50 text-[#7f1d1d]"
       />
     ))}
     {buttons.map((button, index) => (
       <button
         key={index}
-        className="w-full bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] text-white rounded-md py-2 hover:from-[#1e40af] hover:to-[#1e3a8a] mb-4"
+        className="w-full bg-gradient-to-r from-[#7f1d1d] to-[#dc2626] text-white rounded-md py-2 hover:from-[#991b1b] hover:to-[#7f1d1d] mb-4"
       >
         {button.label}
       </button>
@@ -51,9 +51,9 @@ export default function RedCreateAgent() {
   const btn = ["ماه 1", "ماه 2", "ماه 3"];
   const volume = ["25 gig", "50 gig", "50 gig - سه ماهه", "100 gig"];
   return (
-    <div className="min-h-screen " dir="rtl">
+    <div className="min-h-screen" dir="rtl">
       <div className="text-center py-4">
-        <h1 className="text-2xl font-bold text-[#1e3a8a]">
+        <h1 className="text-2xl font-bold text-[#7f1d1d]">
           سامانه مدیریت یوزر
         </h1>
       </div>
@@ -62,7 +62,7 @@ export default function RedCreateAgent() {
         {btn.map((mount, index) => (
           <div
             key={index}
-            className="cursor-default shadow-md bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] rounded-lg p-5 text-white"
+            className="cursor-default shadow-md bg-gradient-to-r from-[#7f1d1d] to-[#dc2626] rounded-lg p-5 text-white"
           >
             {mount}
           </div>
@@ -72,7 +72,7 @@ export default function RedCreateAgent() {
         {volume.map((vol, index) => (
           <div
             key={index}
-            className="cursor-default shadow-md bg-gradient-to-r from-[#1e3a8a] to-[#2563eb] rounded-lg p-5 text-white"
+            className="cursor-default shadow-md bg-gradient-to-r from-[#7f1d1d] to-[#dc2626] rounded-lg p-5 text-white"
           >
             {vol}
           </div>
@@ -86,7 +86,7 @@ export default function RedCreateAgent() {
           ))}
         </div>
       </div>
-      <div className=" max-w-4xl mx-auto py-10 bg-gradient-to-r from-[#1e40af] to-[#2563eb] text-white p-4">
+      <div className="max-w-4xl mx-auto py-10 bg-gradient-to-r from-[#7f1d1d] to-[#dc2626] text-white p-4">
         <h2 className="text-xl font-bold">کانفیگ حجمی :</h2>
         <p className="mt-2">
           <span className="font-bold">username:</span> your_username <br />
