@@ -73,7 +73,7 @@ export default function RedDepositDates() {
           <select
             value={selectedDay}
             onChange={(e) => setSelectedDay(e.target.value)}
-            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
           >
             {Array.from({ length: 31 }, (_, i) => (
               <option key={i + 1} value={i + 1}>
@@ -83,7 +83,7 @@ export default function RedDepositDates() {
           </select>
           <button
             onClick={handleSearch}
-            className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600"
+            className="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600"
           >
             جستجو
           </button>
@@ -94,13 +94,13 @@ export default function RedDepositDates() {
           <>
             <p className="text-center text-gray-700 mb-4">
               تعداد اندروید:{" "}
-              <span className="font-bold text-blue-500">{androidCount}</span> |
+              <span className="font-bold text-red-500">{androidCount}</span> |
               تعداد آیفون:{" "}
               <span className="font-bold text-green-500">{iphoneCount}</span>
             </p>
             <table className="w-full border-collapse border border-gray-300">
               <thead>
-                <tr className="bg-blue-500 text-white">
+                <tr className="bg-red-500 text-white">
                   <th className="border border-gray-300 p-2">id</th>
                   <th className="border border-gray-300 p-2">نام کاربری</th>
                   <th className="border border-gray-300 p-2">پلتفرم</th>
